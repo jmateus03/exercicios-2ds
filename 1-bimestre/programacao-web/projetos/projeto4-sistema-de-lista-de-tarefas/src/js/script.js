@@ -1,4 +1,3 @@
-const botao = document.getElementById("adicionar")
 const conteudo  = document.getElementById("tarefa")
 const lista = document.getElementById("lista")
 const form = document.getElementById("formulario")
@@ -11,7 +10,7 @@ form.addEventListener("submit" , (e)=>{
 
         const li = document.createElement("li")
         li.id = `tarefa${contagem}`
-        li.classList.add = `tarefa${contagem}`
+        li.classList.add(`tarefa${contagem}`)
         
         li.innerHTML = `
             ${conteudo.value}.<br>
@@ -21,13 +20,16 @@ form.addEventListener("submit" , (e)=>{
             <button onclick="concluido(${contagem})">
                 concluido
             </button>
-
         ` 
+
         lista.appendChild(li)
+        conteudo.value = ""
+        
     }else{
         alert("preencha todos os campos de informações")
         return
     }
+
     contagem++
 })
 
@@ -39,10 +41,7 @@ function remover(i){
 function concluido(i){
     const tarefaConcluido = document.getElementById(`tarefa${i}`) 
 
-    tarefaConcluido.style.textDecoration = "line-Through"
+    tarefaConcluido.style.textDecoration = "line-through"
     tarefaConcluido.style.textDecorationColor = "green"
     tarefaConcluido.style.color = "green"
 }
-
-
-
