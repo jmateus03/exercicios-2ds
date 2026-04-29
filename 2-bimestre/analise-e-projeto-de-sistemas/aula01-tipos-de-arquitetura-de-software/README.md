@@ -132,3 +132,7 @@ Associe:
 3. Site escolar com vários usuários
 
 Crie sua resposta abaixo:
+
+1.monolitica
+2.micro serviço
+3.cliente servidor
