@@ -6,10 +6,7 @@ class Notificacao{
     enviar(){
         return "tipo da mensagem"
     }
-
-    
 }
-
 
     class Email extends Notificacao {
         enviar(){
