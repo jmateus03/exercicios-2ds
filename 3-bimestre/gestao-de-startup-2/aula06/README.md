@@ -247,7 +247,9 @@ A equipe consegue realizar apenas **três tarefas** nesta Sprint.
 1. Quais três tarefas você escolheria?
 
 A — corrigir o erro que impede os usuários de fazer login
+
 E — corrigir o erro que causa perda de dados
+
 C — criar a recuperação de senha
 
 2. Por que elas devem ter prioridade?
